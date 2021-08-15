@@ -1,0 +1,44 @@
+{
+  "name": "goit-nodejs-hw-01",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index",
+    "start:dev": "nodemon index",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yu1iia/goit-nodejs-hw-01.git"
+  },
+  "keywords": [],
+  "author": "Yuliia Burko <yuliia.burko@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yu1iia/goit-nodejs-hw-01/issues"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "husky": "^7.0.1",
+    "lint-staged": "^11.1.2",
+    "nodemon": "^2.0.12",
+    "prettier": "^2.3.2"
+  },
+  "dependencies": {
+    "commander": "^8.1.0",
+    "cors": "^2.8.5",
+    "shortid": "^2.2.16",
+    "yargs": "^17.1.0"
+  },
+  "files.autoSave": "onFocusChange",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix",
+    "*.{js,css,md}": "prettier --write"
+  }
+}
